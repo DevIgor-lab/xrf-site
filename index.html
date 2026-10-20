@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XRF Group | Academia e mentoria de CS2: técnico, tático e mental</title>
+<meta name="description" content="A XRF Group é uma academia de CS2 que desenvolve o seu conhecimento do jogo com foco técnico, tático e mental. Mentoria individual e para times, lineup e campeonatos.">
+<meta name="keywords" content="mentoria CS2, coach CS2, academia de Counter-Strike, treino CS2, XRF Group, lineup CS2, campeonatos CS2">
+<meta name="author" content="XRF Group">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050905">
+<link rel="canonical" href="https://www.xrfgroup.com.br/">
+<link rel="icon" type="image/png" href="assets/logo-xrf.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="XRF Group">
+<meta property="og:title" content="XRF Group | Academia e mentoria de CS2">
+<meta property="og:description" content="Desenvolvimento técnico, tático e mental para jogadores de CS2. Fale com a XRF Group e comece a evoluir.">
+<meta property="og:url" content="https://www.xrfgroup.com.br/">
+<meta property="og:image" content="https://www.xrfgroup.com.br/assets/logo-xrf.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XRF Group | Academia e mentoria de CS2">
+<meta name="twitter:description" content="Desenvolvimento técnico, tático e mental para jogadores de CS2.">
+<meta name="twitter:image" content="https://www.xrfgroup.com.br/assets/logo-xrf.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600;1,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/logo-xrf.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsOrganization","name":"XRF Group","description":"Academia e equipe de CS2 com mentoria técnica, tática e mental.","url":"https://www.xrfgroup.com.br/","logo":"https://www.xrfgroup.com.br/assets/logo-xrf.png","email":"contato.xrfgroup@gmail.com","telephone":"+55-11-995009046","sport":"Counter-Strike 2","sameAs":["https://www.instagram.com/xrfgroup/"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","telephone":"+55-11-995009046","email":"contato.xrfgroup@gmail.com","availableLanguage":"Portuguese"}}
+</script>
+<style>
+:root{
+  --void:#050905; --panel:#0c140d; --panel-2:#111d12; --line:#1d3a22;
+  --lime:#b4f23b; --neon:#3ddc5a; --deep:#0b7a2e; --text:#eaf4ea; --mute:#93a894;
+  --display:"Chakra Petch","Arial Narrow",sans-serif; --body:"Manrope",system-ui,sans-serif;
+  --cut:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px));
+  --grad:linear-gradient(135deg,var(--lime),var(--neon) 45%,var(--deep));
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{background:var(--void);color:var(--text);font:400 1.0625rem/1.65 var(--body);padding-left:96px;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--lime);color:#000;padding:.6rem 1rem;z-index:99}
+.skip:focus{left:1rem;top:1rem}
+h1,h2,h3{font-family:var(--display);font-style:italic;font-weight:700;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:1rem}
+h3{font-size:1.35rem;margin-bottom:.5rem}
+p{max-width:62ch}
+.wrap{width:min(1180px,100% - 3rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7.5rem) 0;position:relative}
+section+section{border-top:1px solid var(--line)}
+.lead{color:var(--mute);font-size:1.15rem;margin-bottom:2.2rem}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* dock com ícones */
+.dock{position:fixed;left:0;top:0;bottom:0;width:96px;z-index:50;background:linear-gradient(180deg,#0a120b,#050905);border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem 0}
+.dock .brand img{width:58px;margin-bottom:.8rem}
+.dock a{display:grid;justify-items:center;gap:.2rem;width:78px;padding:.65rem 0;text-decoration:none;color:var(--mute);font:600 .72rem var(--body);clip-path:var(--cut);transition:color .2s,background .2s}
+.dock svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.dock a:hover{color:var(--text)}
+.dock a[aria-current=true]{color:#041006;background:var(--grad)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.7rem;font:700 1rem var(--display);font-style:italic;text-decoration:none;clip-path:var(--cut);transition:transform .2s,filter .2s;border:0;cursor:pointer}
+.btn.main{background:var(--grad);color:#041006}
+.btn.ghost{background:var(--panel-2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line)}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.1)}
+.row{display:flex;flex-wrap:wrap;gap:1rem}
+
+/* hero */
+#inicio{min-height:100svh;display:grid;align-items:center;padding-top:2rem;overflow:hidden}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,5.6rem);text-transform:uppercase;margin-bottom:1.2rem}
+.hero p{font-size:1.2rem;color:#c8d9c8;margin-bottom:2rem}
+.bg-media{position:absolute;inset:0;z-index:-1;opacity:.28}
+.bg-media video,.bg-media img{width:100%;height:100%;object-fit:cover}
+#inicio::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 55% at 78% 45%,rgba(61,220,90,.22),transparent 70%),repeating-linear-gradient(0deg,rgba(61,220,90,.04) 0 1px,transparent 1px 4px)}
+.scope{position:relative;aspect-ratio:1;display:grid;place-items:center}
+.scope .logo{width:76%;filter:drop-shadow(0 0 34px rgba(61,220,90,.6));animation:float 6s ease-in-out infinite}
+.ring{position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(61,220,90,.55);animation:spin 28s linear infinite}
+.ring.b{inset:9%;border:2px solid transparent;border-top-color:var(--lime);border-bottom-color:var(--deep);animation-duration:9s;animation-direction:reverse}
+.ring.c{inset:-5%;border-style:dotted;opacity:.4;animation-duration:50s}
+.scope::before,.scope::after{content:"";position:absolute;background:linear-gradient(var(--neon),transparent);opacity:.6}
+.scope::before{left:50%;top:-8%;width:1px;height:116%}
+.scope::after{top:50%;left:-8%;height:1px;width:116%;background:linear-gradient(90deg,transparent,var(--neon),transparent)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+.enter{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+
+/* carrossel */
+.car{position:relative}
+.track{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:.5rem 0 1rem;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 min(84%,400px);scroll-snap-align:start;background:var(--panel);clip-path:var(--cut);position:relative;min-height:100%}
+.slide.wide{flex-basis:min(100%,560px)}
+.ctl{display:flex;align-items:center;gap:.8rem;margin-top:.6rem}
+.ctl button{width:48px;height:48px;background:var(--panel-2);color:var(--lime);border:0;cursor:pointer;clip-path:var(--cut);font-size:1.3rem;transition:background .2s}
+.ctl button:hover{background:var(--deep);color:#fff}
+.dots{display:flex;gap:.45rem;margin-left:auto}
+.dots i{width:26px;height:5px;background:var(--line);transform:skewX(-30deg);transition:background .25s,width .25s}
+.dots i.on{background:var(--lime);width:44px}
+
+/* mídia (imagem, gif ou vídeo) */
+.media{aspect-ratio:4/3;background:var(--panel-2);position:relative;overflow:hidden;display:grid;place-items:center}
+.media img,.media video{width:100%;height:100%;object-fit:cover}
+.media.fallback::before{content:"";position:absolute;inset:0;background:conic-gradient(from 0deg at 50% 50%,transparent,rgba(61,220,90,.28),transparent 35%);animation:spin 5s linear infinite}
+.media.fallback::after{content:attr(data-label);position:relative;font:700 1rem var(--display);font-style:italic;color:var(--mute);text-align:center;padding:1rem}
+.slide .body{padding:1.4rem 1.5rem 1.8rem}
+.slide .body p{color:var(--mute);font-size:.98rem}
+.tag{display:inline-block;background:var(--grad);color:#041006;font:700 .8rem var(--display);font-style:italic;padding:.15rem .7rem;margin-bottom:.7rem}
+.arts .slide{flex-basis:min(88%,480px)}
+.arts img{aspect-ratio:1;object-fit:cover}
+
+/* grids */
+.split{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.pillars{display:grid;gap:1rem;margin-top:1.5rem}
+.pillars div{padding:1.1rem 1.3rem;background:var(--panel);border-left:4px solid var(--neon)}
+.pillars p{color:var(--mute);font-size:.98rem}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:3rem 0;list-style:none;padding:0}
+.steps li{counter-increment:s;padding:1.4rem;background:var(--panel);clip-path:var(--cut)}
+.steps li::before{content:counter(s);display:block;font:700 2.6rem var(--display);font-style:italic;color:var(--neon);line-height:1}
+.steps p{color:var(--mute);font-size:.96rem}
+.plan .body{display:flex;flex-direction:column;height:100%}
+.plan ul{list-style:none;padding:0;margin:.8rem 0 1.4rem;display:grid;gap:.5rem;color:#c8d9c8;font-size:.97rem}
+.plan li::before{content:"✓ ";color:var(--lime);font-weight:700}
+.plan .btn{margin-top:auto;justify-content:center}
+.plan.hot{background:linear-gradient(180deg,#123a1a,var(--panel))}
+details{background:var(--panel);margin-bottom:.7rem;border-left:4px solid var(--deep)}
+summary{cursor:pointer;padding:1.1rem 1.3rem;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--lime);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{padding:0 1.3rem 1.2rem;color:var(--mute)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:2rem}
+.contact a{padding:1.4rem;background:var(--panel-2);text-decoration:none;clip-path:var(--cut);transition:background .2s}
+.contact a:hover{background:var(--deep)}
+.contact b{display:block;font:700 1.15rem var(--display);font-style:italic;color:var(--lime)}
+footer{padding:2.5rem 0 5rem;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+footer p{max-width:none}
+
+/* mobile: dock vira barra inferior */
+@media (max-width:860px){
+  body{padding-left:0;padding-bottom:78px}
+  .dock{inset:auto 0 0 0;width:auto;height:74px;flex-direction:row;justify-content:space-around;padding:.3rem;border-right:0;border-top:1px solid var(--line);gap:0}
+  .dock .brand{display:none}
+  .dock a{width:auto;flex:1;padding:.45rem 0;font-size:.62rem;clip-path:none}
+  .hero,.split{grid-template-columns:1fr}
+  .scope{max-width:340px;margin:0 auto;order:-1}
+  #inicio{min-height:auto;padding-top:3rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h5v-6h4v6h5V10"/></symbol>
+  <symbol id="i-xrf" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Zm-3 6 6 6m0-6-6 6"/></symbol>
+  <symbol id="i-coach" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7M18 3l1 2 2 .3-1.5 1.5.4 2.2-1.9-1-1.9 1 .4-2.2L15 5.300l2-.3z"/></symbol>
+  <symbol id="i-lineup" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.500"/><path d="M2 20c0-3.500 2.700-6 6-6s6 2.500 6 6M15 14.500c3 0 6 1.700 6 5.500"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0V4Zm0 2H3c0 3 1.500 4.500 4 5m10-5h4c0 3-1.500 4.500-4 5M12 14v4m-4 3h8m-6-3h4"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.500"/><path d="M12 1v5m0 12v5M1 12h5m12 0h5"/></symbol>
+</svg>
+
+<nav class="dock" aria-label="Navegação principal">
+  <a class="brand" href="#inicio" aria-label="XRF Group, ir ao início"><img src="assets/logo-xrf.png" alt="Logo da XRF Group" width="58" height="58"></a>
+  <a href="#inicio"><svg><use href="#i-home"/></svg>Início</a>
+  <a href="#xrf"><svg><use href="#i-xrf"/></svg>XRF Group</a>
+  <a href="#coach"><svg><use href="#i-coach"/></svg>Coach</a>
+  <a href="#lineup"><svg><use href="#i-lineup"/></svg>Lineup</a>
+  <a href="#campeonatos"><svg><use href="#i-trophy"/></svg>Campeonatos</a>
+  <a href="#mentoria"><svg><use href="#i-target"/></svg>Mentoria</a>
+</nav>
+
+<main id="conteudo">
+
+<!-- INÍCIO -->
+<section id="inicio" aria-labelledby="t-inicio">
+  <!-- Para um fundo em movimento: data-src="assets/hero.mp4" (ou .gif/.webp) -->
+  <div class="bg-media media" data-src="" aria-hidden="true"></div>
+  <div class="wrap hero">
+    <div class="enter">
+      <h1 id="t-inicio">Evolua o <span class="grad-text">técnico, tático e mental</span> no CS2</h1>
+      <p>A XRF Group é uma academia de CS2 que desenvolve e aprimora o teu conhecimento sobre o jogo, com mentoria individual e para times.</p>
+      <div class="row">
+        <a class="btn main" href="https://wa.me/5511995009046?text=Fala%20XRF!%20Quero%20saber%20mais%20sobre%20a%20mentoria%20de%20CS2." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn ghost" href="#mentoria">Ver a mentoria</a>
+      </div>
+    </div>
+    <div class="scope enter" style="animation-delay:.15s">
+      <span class="ring c"></span><span class="ring"></span><span class="ring b"></span>
+      <img class="logo" src="assets/logo-xrf.png" alt="XRF Group, logo em verde neon" width="640" height="640" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- XRF GROUP -->
+<section id="xrf" aria-labelledby="t-xrf">
+  <div class="wrap split">
+    <div>
+      <h2 id="t-xrf">Você sabe o que a <span class="grad-text">XRF Group</span> faz?</h2>
+      <p class="lead">Somos uma academia de CS2 onde desenvolvemos e aprimoramos teu conhecimento sobre o jogo. Três frentes de trabalho, um mesmo método.</p>
+      <div class="pillars">
+        <div><h3>Técnico</h3><p>Mira, movimentação, utilitários e execução sob pressão.</p></div>
+        <div><h3>Tático</h3><p>Leitura de mapa, economia, rotação e tomada de decisão.</p></div>
+        <div><h3>Mental</h3><p>Foco, comunicação e consistência para render em partida decisiva.</p></div>
+      </div>
+    </div>
+    <div class="car arts" data-auto aria-roledescription="carrossel" aria-label="Artes da XRF Group">
+      <div class="track">
+        <div class="slide"><img src="assets/xrf-info-1.png" alt="Você sabe o que o XRF Group faz? Arraste para o lado" width="1080" height="1080" loading="lazy"></div>
+        <div class="slide"><img src="assets/xrf-info-2.png" alt="Somos uma academia de CS2 com foco no desenvolvimento técnico, tático e mental" width="1080" height="1080" loading="lazy"></div>
+      </div>
+      <div class="ctl"><button type="button" data-dir="-1" aria-label="Slide anterior">‹</button><button type="button" data-dir="1" aria-label="Próximo slide">›</button><div class="dots" aria-hidden="true"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COACH -->
+<section id="coach" aria-labelledby="t-coach">
+  <div class="wrap">
+    <h2 id="t-coach">Quem treina <span class="grad-text">você</span></h2>
+    <p class="lead">Conheça a comissão técnica. Troque os textos e as mídias abaixo pelos dados reais de cada coach.</p>
+    <div class="car" aria-roledescription="carrossel" aria-label="Coaches">
+      <div class="track">
+        <article class="slide wide">
+          <div class="media fallback" data-src="" data-label="Foto, GIF ou vídeo do coach (assets/coach-1.mp4)"></div>
+          <div class="body"><span class="tag">Head coach</span><h3>Nome do coach</h3><p>Resumo da trajetória: tempo de jogo, elos e ligas, times e resultados. Escreva aqui o que torna este coach referência.</p></div>
+        </article>
+        <article class="slide wide">
+          <div class="media fallback" data-src="" data-label="Mídia do coach 2"></div>
+          <div class="body"><span class="tag">Analista</span><h3>Nome do analista</h3><p>Responsável por análise de demo, estudo de adversários e preparação de mapa.</p></div>
+        </article>
+        <article class="slide wide">
+          <div class="media fallback" data-src="" data-label="Mídia do coach 3"></div>
+          <div class="body"><span class="tag">Mental</span><h3>Nome do preparador</h3><p>Trabalha foco, rotina e controle emocional para campeonato e temporada longa.</p></div>
+        </article>
+      </div>
+      <div class="ctl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Próximo">›</button><div class="dots" aria-hidden="true"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LINEUP -->
+<section id="lineup" aria-labelledby="t-lineup">
+  <div class="wrap">
+    <h2 id="t-lineup">A <span class="grad-text">lineup</span> da XRF</h2>
+    <p class="lead">Cinco funções, uma estratégia. Adicione nick, foto e estatísticas de cada jogador do elenco.</p>
+    <div class="car" data-auto aria-roledescription="carrossel" aria-label="Jogadores da lineup">
+      <div class="track">
+        <article class="slide"><div class="media fallback" data-src="" data-label="Foto ou GIF do jogador"></div><div class="body"><span class="tag">IGL</span><h3>Nick do jogador</h3><p>Lidera a leitura de round e define o ritmo da equipe.</p></div></article>
+        <article class="slide"><div class="media fallback" data-src="" data-label="Foto ou GIF do jogador"></div><div class="body"><span class="tag">Entry</span><h3>Nick do jogador</h3><p>Abre espaço e cria a primeira vantagem do round.</p></div></article>
+        <article class="slide"><div class="media fallback" data-src="" data-label="Foto ou GIF do jogador"></div><div class="body"><span class="tag">AWP</span><h3>Nick do jogador</h3><p>Controla ângulos longos e decide duelos-chave.</p></div></article>
+        <article class="slide"><div class="media fallback" data-src="" data-label="Foto ou GIF do jogador"></div><div class="body"><span class="tag">Suporte</span><h3>Nick do jogador</h3><p>Utilitários na hora certa para a execução funcionar.</p></div></article>
+        <article class="slide"><div class="media fallback" data-src="" data-label="Foto ou GIF do jogador"></div><div class="body"><span class="tag">Lurker</span><h3>Nick do jogador</h3><p>Pune rotações e garante informação pelas costas do adversário.</p></div></article>
+      </div>
+      <div class="ctl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Próximo">›</button><div class="dots" aria-hidden="true"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPEONATOS -->
+<section id="campeonatos" aria-labelledby="t-camp">
+  <div class="wrap">
+    <h2 id="t-camp">Onde a <span class="grad-text">evolução</span> é testada</h2>
+    <p class="lead">Calendário, resultados e transmissões dos campeonatos da XRF Group.</p>
+    <div class="car" aria-roledescription="carrossel" aria-label="Campeonatos">
+      <div class="track">
+        <article class="slide wide"><div class="media fallback" data-src="" data-label="Banner ou GIF do campeonato"></div><div class="body"><span class="tag">Próximo</span><h3>Nome do campeonato</h3><p>Data, formato, premiação e link de inscrição.</p></div></article>
+        <article class="slide wide"><div class="media fallback" data-src="" data-label="Banner ou GIF do campeonato"></div><div class="body"><span class="tag">Em andamento</span><h3>Nome do campeonato</h3><p>Fase atual, tabela e onde assistir ao vivo.</p></div></article>
+        <article class="slide wide"><div class="media fallback" data-src="" data-label="Banner ou GIF do campeonato"></div><div class="body"><span class="tag">Encerrado</span><h3>Nome do campeonato</h3><p>Colocação final, melhores momentos e resultados.</p></div></article>
+      </div>
+      <div class="ctl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Próximo">›</button><div class="dots" aria-hidden="true"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENTORIA -->
+<section id="mentoria" aria-labelledby="t-ment">
+  <div class="wrap">
+    <h2 id="t-ment">Mentoria de <span class="grad-text">CS2</span></h2>
+    <p class="lead">Aulas ao vivo, feitas em cima das tuas partidas. Escolha o formato e combine o horário pelo WhatsApp.</p>
+    <div class="car" aria-roledescription="carrossel" aria-label="Planos de mentoria">
+      <div class="track">
+        <article class="slide plan"><div class="body"><span class="tag">Individual</span><h3>Mentoria 1 a 1</h3><p>Foco total no teu jogo.</p><ul><li>Análise das tuas demos</li><li>Treino guiado ao vivo</li><li>Plano de treino semanal</li></ul><a class="btn main" href="https://wa.me/5511995009046?text=Quero%20a%20mentoria%20individual%20de%20CS2." target="_blank" rel="noopener">Consultar valores</a></div></article>
+        <article class="slide plan hot"><div class="body"><span class="tag">Mais completo</span><h3>Intensivo</h3><p>Duas ou mais aulas por semana.</p><ul><li>Tudo da mentoria individual</li><li>Revisão de demo entre as aulas</li><li>Acompanhamento no WhatsApp</li></ul><a class="btn main" href="https://wa.me/5511995009046?text=Quero%20a%20mentoria%20intensiva%20de%20CS2." target="_blank" rel="noopener">Consultar valores</a></div></article>
+        <article class="slide plan"><div class="body"><span class="tag">Times</span><h3>Equipe</h3><p>Os cinco jogadores juntos.</p><ul><li>Review de demo em grupo</li><li>Função definida por jogador</li><li>Sistema de ataque e defesa</li></ul><a class="btn main" href="https://wa.me/5511995009046?text=Quero%20a%20mentoria%20de%20equipe%20de%20CS2." target="_blank" rel="noopener">Falar sobre o time</a></div></article>
+      </div>
+      <div class="ctl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Próximo">›</button><div class="dots" aria-hidden="true"></div></div>
+    </div>
+
+    <ol class="steps" aria-label="Como funciona a mentoria">
+      <li><h3>Diagnóstico</h3><p>Você envia demos recentes e nós mapeamos os erros antes da primeira aula.</p></li>
+      <li><h3>Prioridade</h3><p>Definimos os pontos que mais custam round e atacamos eles primeiro.</p></li>
+      <li><h3>Treino guiado</h3><p>Aulas ao vivo com prática de técnica, tática e controle mental.</p></li>
+      <li><h3>Acompanhamento</h3><p>Revisamos as próximas partidas para confirmar que o ajuste pegou.</p></li>
+    </ol>
+
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso ter um elo mínimo?</summary><p>Não. Atendemos do jogador casual ao competitivo. O ponto de partida muda, o método é o mesmo.</p></details>
+    <details><summary>É curso gravado?</summary><p>Não. É mentoria ao vivo, montada em cima das tuas partidas.</p></details>
+    <details><summary>Como faço para começar?</summary><p>Chame a XRF Group no WhatsApp ou no Instagram, conte seu objetivo e combinamos o formato ideal.</p></details>
+
+    <div class="contact" id="contato">
+      <a href="https://wa.me/5511995009046" target="_blank" rel="noopener"><b>WhatsApp</b>(11) 99500-9046</a>
+      <a href="mailto:contato.xrfgroup@gmail.com"><b>E-mail</b>contato.xrfgroup@gmail.com</a>
+      <a href="https://www.instagram.com/xrfgroup/" target="_blank" rel="noopener"><b>Instagram</b>@xrfgroup</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="ano">2026</span> XRF Group. Todos os direitos reservados.</p>
+    <p>Site independente, sem vínculo oficial com a Valve Corporation. Counter-Strike é marca da Valve.</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  // Mídia: imagem, GIF/WebP ou vídeo a partir de data-src
+  document.querySelectorAll('.media[data-src]').forEach(m => {
+    const src = m.dataset.src; if (!src) return;
+    const isVideo = /\.(mp4|webm)$/i.test(src);
+    const el = document.createElement(isVideo ? 'video' : 'img');
+    el.src = src; el.loading = 'lazy';
+    if (isVideo) Object.assign(el, { autoplay: true, muted: true, loop: true, playsInline: true });
+    else el.alt = m.dataset.label || '';
+    m.classList.remove('fallback'); m.appendChild(el);
+  });
+
+  // Carrosséis
+  document.querySelectorAll('.car').forEach(car => {
+    const track = car.querySelector('.track'), slides = [...track.children];
+    const dots = car.querySelector('.dots');
+    slides.forEach(() => dots.appendChild(document.createElement('i')));
+    const step = () => slides[0].getBoundingClientRect().width + 19;
+    const sync = () => {
+      const i = Math.min(slides.length - 1, Math.round(track.scrollLeft / step()));
+      [...dots.children].forEach((d, n) => d.classList.toggle('on', n === i));
+    };
+    track.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+    const go = dir => {
+      const end = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      if (dir > 0 && end) track.scrollTo({ left: 0, behavior: 'smooth' });
+      else track.scrollBy({ left: dir * step(), behavior: 'smooth' });
+    };
+    car.querySelectorAll('[data-dir]').forEach(b => b.addEventListener('click', () => go(+b.dataset.dir)));
+    track.tabIndex = 0;
+    track.addEventListener('keydown', e => { if (e.key === 'ArrowRight') go(1); if (e.key === 'ArrowLeft') go(-1); });
+    sync();
+    if (car.hasAttribute('data-auto') && !reduce) {
+      let paused = false, visible = false;
+      ['pointerenter', 'focusin', 'touchstart'].forEach(ev => car.addEventListener(ev, () => paused = true, { passive: true }));
+      ['pointerleave', 'focusout'].forEach(ev => car.addEventListener(ev, () => paused = false));
+      new IntersectionObserver(([e]) => visible = e.isIntersecting).observe(car);
+      setInterval(() => { if (!paused && visible) go(1); }, 4500);
+    }
+  });
+
+  // Dock: item ativo conforme a seção visível
+  const links = [...document.querySelectorAll('.dock a:not(.brand)')];
+  const obs = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) links.forEach(a => {
+      if (a.getAttribute('href') === '#' + e.target.id) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main section').forEach(s => obs.observe(s));
+  links[0].setAttribute('aria-current', 'true');
+})();
+</script>
+</body>
+</html>
